@@ -1,138 +1,136 @@
-/* ----> Media Querry (375px) <---- */
-@media screen and (max-width: 375px) and (min-width: 325px){
 /* /// body /// */
-    body {
-        margin: 0 auto;
-    }
+body {
+    max-width: 375px;
+    margin: 0 auto;
+}
 
 /* /// fonts /// */
-    h2, button {
-        font-family: 'Shrikhand', cursive;
-    }
+h2, button {
+    font-family: 'Shrikhand', cursive;
+}
 
-    p {
-        font-family: 'Roboto', sans-serif;
-    }
+p {
+    font-family: 'Roboto', sans-serif;
+}
 
 /* /// Header /// */
-    header{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        background-color: #F6F6F6;
-        padding-bottom: 50px;
-    }
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #F6F6F6;
+    padding-bottom: 50px;
+}
 
-    .header__logo {
-        width: 50%;
-        padding-top: 25px;
-    }
+.header__logo {
+    width: 50%;
+    padding-top: 25px;
+}
 
-    .header__ville {
-        background-color: #EAEAEA;
-        height: 35px;
-        padding-top: 20px;
-        width: 100%;
-        text-align: center;
-    }
+.header__ville {
+    background-color: #EAEAEA;
+    height: 35px;
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
+}
 
-    .header__icon {
-        padding-right: 10px;
-    }
+.header__icon {
+    padding-right: 10px;
+}
 
-    .header__txt {
-        text-align: center;
-        width: 80%;
-    }
+.header__txt {
+    text-align: center;
+    width: 80%;
+}
 
-    .header__btn {
-        background-color: #DF6FDA;
-        color: #fff;
-        border: 0px;
-        border-radius: 20px;
-        padding: 10px;
-    }
+.header__btn {
+    background-color: #DF6FDA;
+    color: #fff;
+    border: 0px;
+    border-radius: 20px;
+    padding: 10px;
+}
 
 /* /// section fonctionemment /// */
-    /* .section__fonction {
+/* .section__fonction {
 
-    } */
+} */
 
-    .fonction__div {
-        display: flex;
-        justify-content: left;
-        align-items: center;
-        margin: 10px;
-        padding-left: 15px;
-        box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.200);
-        border-radius: 25px;
-    }
+.fonction__div {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 10px;
+    padding-left: 15px;
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.200);
+    border-radius: 25px;
+}
 
-    .fonction__element {
-        padding: 2px 5px ;
-    }
+.fonction__element {
+    padding: 2px 5px ;
+}
 
-    .fonction__icon {
-        width: 5%;
-    }
+.fonction__icon {
+    width: 5%;
+}
 
 /* /// section restaurant /// */
-    .section_restaurant {
-        background-color: #F6F6F6;
-    }
+.section_restaurant {
+    background-color: #F6F6F6;
+}
 
-    .restaurant__div {
-        margin: 20px;
-        box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.200);
-        border-radius: 20px;
-    }
+.restaurant__div {
+    margin: 20px;
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.200);
+    border-radius: 20px;
+}
 
-    .restaurant__img {
-        width: 100%;
-        height: 150px;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0;
-    }
+.restaurant__img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
 
-    .restaurant__element {
-        display: flex;
-    }
+.restaurant__element {
+    display: flex;
+}
 
-    .restaurant__element1 {
-        width: 80%;
-        padding: 10px;
-    }
+.restaurant__element1 {
+    width: 80%;
+    padding: 10px;
+}
 
-    .restaurant__element1 h3, .restaurant__element1 p {
-        margin: 0;
-    }
+.restaurant__element1 h3, .restaurant__element1 p {
+    margin: 0;
+}
 
-    .restaurant__element2 {
-        width: 20%;
-        text-align: center;
-        padding-top: 10px;
-    }
+.restaurant__element2 {
+    width: 20%;
+    text-align: center;
+    padding-top: 10px;
+}
 
 /* /// footer /// */
-    footer {
-        color: #fff;
-        background-color: #353535;
-        padding: 20px;
-    }
+footer {
+    color: #fff;
+    background-color: #353535;
+    padding: 20px;
+}
 
-    .footer__logo {
-        width: 25%;
-    }
+.footer__logo {
+    width: 25%;
+}
 
-    footer p {
-        margin: 5px;
-    }
+footer p {
+    margin: 5px;
+}
 
-    .footer__icon1 {
-        width: 25px;
-    }
-    
-    .footer__icon2 {
-        width: 20px;
-    }
+.footer__icon1 {
+    width: 25px;
+}
+
+.footer__icon2 {
+    width: 20px;
 }
