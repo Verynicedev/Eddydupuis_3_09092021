@@ -1,10 +1,11 @@
 /* ----> Media Querry (375px) <---- */
-@media screen and (max-width: 375px){
+@media screen and (max-width: 375px) and (min-width: 325px){
 /* /// body /// */
     body {
         margin: 0 auto;
     }
 
+/* /// fonts /// */
     h2, button {
         font-family: 'Shrikhand', cursive;
     }
@@ -130,6 +131,7 @@
     .footer__icon1 {
         width: 25px;
     }
+    
     .footer__icon2 {
         width: 20px;
     }
