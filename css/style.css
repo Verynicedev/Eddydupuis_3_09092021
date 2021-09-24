@@ -1,0 +1,8 @@
+/* ----> Media Querry (375px) <---- */
+@media screen and (max-width: 375px){
+    #header {
+        display: flex;
+        color: red;
+        background-color: red;
+    }
+}
