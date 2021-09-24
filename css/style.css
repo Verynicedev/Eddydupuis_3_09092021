@@ -1,8 +1,30 @@
 /* ----> Media Querry (375px) <---- */
 @media screen and (max-width: 375px){
-    #header {
+/* /// Header /// */
+    header{
         display: flex;
-        color: red;
-        background-color: red;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header__logo {
+        width: 50%;
+    }
+
+    .header__icon {
+        padding-right: 10px;
+    }
+
+    .header__txt {
+        text-align: center;
+        width: 100%;
+    }
+
+    .header__btn {
+        background-color: pink;
+        color: #fff;
+        border: 1px solid black;
+        border-radius: 20px;
+        padding: 10px;
     }
 }
