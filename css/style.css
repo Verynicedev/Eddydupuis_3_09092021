@@ -50,6 +50,7 @@ header{
     border: 0px;
     border-radius: 20px;
     padding: 10px;
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.200);
 }
 
 /* /// section fonctionemment /// */
@@ -63,8 +64,14 @@ header{
     align-items: center;
     margin: 10px;
     padding-left: 15px;
+    background-color: #F6F6F6;
     box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.200);
     border-radius: 25px;
+}
+
+.fonction__div:hover {
+    background-color: #F5EDFF;
+    transition: 0.2s;
 }
 
 .fonction__element {
