@@ -1,0 +1,17 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;400;700&display=swap");
+
+@import "Sass/Utils/mixin";
+@import "Sass/Utils/variable";
+
+@import "Sass/Layout/body";
+@import "Sass/Layout/header";
+
+@import "Sass/Pages/home";
+// @import "Sass/Pages/menu";
+
+@import "Sass/Layout/footer";
+
+@import "Sass/Components/Heart";
+@import "Sass/Components/Button";

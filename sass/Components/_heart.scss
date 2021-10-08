@@ -1,0 +1,29 @@
+/* Heart icon */
+.heart-icons__block {
+    position: absolute;
+    right:50px;
+    top: 15px;
+    padding:10px;
+        .icon-full {
+            position: absolute;
+            font-size: 25px;
+            transition: 0.5s;
+            background: $gradient;
+            -webkit-background-clip: text;
+            color:transparent;
+            transform: scale(0);
+            cursor: pointer;
+        }
+        &:hover .icon-full {
+            transform: scale(1);
+        }
+        .icon-empty {
+            position: absolute;
+            font-size: 25px;
+        }
+        &:hover .icon-empty {
+            background: $gradient;
+            -webkit-background-clip: text;
+            color:transparent;
+        }
+}

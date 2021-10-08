@@ -1,0 +1,23 @@
+/* Body */
+body {
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+        h1 {
+            @include font-shrikhand-title;
+        }
+        h2 {
+            @include font-big;
+        }
+        h3 {
+            @include font-shrikhand-sub-title;
+        }
+        h4 {
+            @include font-medium-bold;
+        }
+        h5 {
+            @include font-medium;
+        }
+        p {
+            @include font-light;
+        }
+}

@@ -1,0 +1,20 @@
+/* Header */
+#logo {
+    @include flexbox-center;
+    padding:15px 0 10px 0;
+        img {
+            height: 30px;
+        }
+}
+.localisation {
+    @include flexbox-center;
+    background-color: darken($background-color, 10%);
+    box-shadow: lightgrey 0px 3px 3px inset;
+        &__icon {
+            padding-right:10px;
+            @include font-medium;
+        }   
+        h5 {
+            margin:15px 0;
+        }
+}
