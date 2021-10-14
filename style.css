@@ -62,6 +62,19 @@ body p {
   margin: 15px 0;
 }
 
+/* Header page menu */
+.header__menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.header__menu > a {
+  color: black;
+  font-size: 20px;
+  padding-left: 25px;
+}
+
 /* INTRODUCTION */
 .introduction {
   background-color: #f6f6f6;
@@ -216,6 +229,90 @@ section > h2 {
   background: url(./images/restaurants/louis.jpg);
   background-position: center;
   background-size: cover;
+}
+
+/* PAGES MENUS */
+.banner {
+  height: 300px;
+  width: 100%;
+}
+
+section {
+  background-color: #fff;
+}
+
+.menu {
+  height: 100%;
+  background-color: #fff;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  padding: 20px 0 20px 0;
+  transform: translateY(-5%);
+}
+.menu__title {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 20px 30px 0 30px;
+}
+.menu__title .icon-empty, .menu__title .icon-full {
+  top: 20px;
+}
+.menu__subtitle {
+  margin: 40px 20px 0 20px;
+  text-transform: uppercase;
+  color: #666666;
+  font-weight: 400;
+}
+
+.border {
+  border-bottom: #99E2D0 3px solid;
+  margin: 5px 0;
+  width: 40px;
+}
+
+.menu__block {
+  display: flex;
+  background: #fff;
+  box-shadow: 0 2px 8px #dbdbdb;
+  border-radius: 15px;
+  cursor: pointer;
+  margin: 15px;
+}
+
+.check-icon__block {
+  background: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.check-icon__block > i {
+  color: #99E2D0;
+  padding: 5px;
+  border-radius: 50%;
+  background: white;
+}
+
+.menu__txt {
+  margin-left: 20px;
+  width: 80%;
+  padding-right: 10px;
+}
+.menu__txt h4 {
+  margin: 15px 0 0 0;
+}
+.menu__txt p {
+  margin-top: 5px;
+}
+
+.price {
+  width: 20%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 16px;
+  font-weight: 700;
 }
 
 /* Footer */
