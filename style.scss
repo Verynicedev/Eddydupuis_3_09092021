@@ -4,6 +4,8 @@
 
 @import "Sass/Utils/mixin";
 @import "Sass/Utils/variable";
+@import "Sass/Utils/keyframes";
+@import "Sass/Components/loader";
 
 @import "Sass/Layout/body";
 @import "Sass/Layout/header";
@@ -13,5 +15,7 @@
 
 @import "Sass/Layout/footer";
 
-@import "Sass/Components/Heart";
-@import "Sass/Components/Button";
+@import "Sass/Components/heart";
+@import "Sass/Components/button";
+
+@import "Sass/Pages/mediaqueries";

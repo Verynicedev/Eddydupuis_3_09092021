@@ -1,0 +1,22 @@
+//LOADING HOME
+
+//TRANSITION MENU
+@keyframes transition-apparition_menu {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes apparition_menu {
+    0% {
+        transform: translateY(5px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

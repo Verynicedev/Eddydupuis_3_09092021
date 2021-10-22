@@ -1,7 +1,11 @@
-@import "../Utils/mixin";
-@import "../Utils/variable";
+@import "../Utils/mixin.scss";
+@import "../Utils/variable.scss";
+@import "../Utils/keyframes.scss";
 
 /* PAGES MENUS */
+.header__menu a:link{
+    text-decoration: none;
+}
 .banner {
     height:300px;
     width: 100%;
@@ -39,39 +43,70 @@ section {
     width: 40px;
 }
 .menu__block {
+    background: white;
     display: flex;
-    background: #fff;
     box-shadow: $shadow;
     border-radius: 15px;
+    animation: transition-apparition_menu 3.5s ease;
     cursor: pointer;
     margin:15px;
+    overflow: hidden;
+        &:hover .check-icon__block {
+            min-width:70px;
+            transition-duration: 0.5s;
+            transform: translateX(-60px);
+            border-radius: 0 15px 15px 0;
+        }
+        &:hover i {
+            transform: rotate(360deg);
+            transition-duration: 0.5s;
+        }
+        &:hover .price {
+            transition-duration: 0.5s;
+            transform: translateX(-50px); 
+        }   
+        &:hover .menu__txt {
+            width:calc(80% - 70px);
+            padding-right:40px;
+        }
 }
 .check-icon__block {
     background: $color-tertiary;
     @include flexbox-center;
+    margin-right: -110px;
         > i {
+            background: white;
             color: $color-tertiary;
             padding: 5px;
             border-radius: 50%;
-            background: white;
         }
+}    
+.menu__animation {
+    @include animation_menu;
 }
 .menu__txt {
     margin-left:20px;
-    width:80%;
+    overflow: hidden;
+    width:calc(80% - 30px);
     padding-right:10px;
         h4 {
             margin:15px 0 0 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space:nowrap;
         }
         p {
             margin-top:5px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
 }
 .price {
-    width:20%;
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    width:20%;
     margin-bottom: 16px;
     font-weight: 700;
 }

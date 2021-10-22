@@ -1,0 +1,101 @@
+// MEDIA QUERIES
+
+// Media 600px
+@media only screen and (min-width : 600px) {
+    h2 {
+        display: flex;
+        justify-content: center;
+    }
+/* RESTAURANTS */
+    .restaurant {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+// Media 750px
+@media only screen and (min-width : 750px) {
+    .footer {
+        @include flexbox-center;
+            a, .logofooter {
+                padding-right:20px;
+            }
+    }
+/* FONCTIONNEMENT */
+    .fonctionnement {
+        background: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        flex-wrap:wrap;
+        padding: 0 10px;
+        &__block {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            padding: 0 20px 20px 20px;
+            margin: 35px 12px;  
+                i {
+                    padding:10px 0;
+                }  
+        }
+    }
+    .fonctionnement__number {
+        position: relative;
+        top: -10px;
+        left: 0;
+    } 
+/* PAGES MENUS */
+    .menu {
+        padding-bottom:10px;
+            &--grid {
+                display:grid;
+                grid-template-columns: 1fr 1fr;
+            }
+            &__categories {
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+                align-self: start;
+                margin:0 20px;
+            }
+            &__subtitle { 
+                margin-left:35px;
+            }
+    }
+    .menu__block {
+        margin:10px;
+    }
+    .price {
+        width:20.5%;
+    } 
+}
+
+// Media 1000px
+@media only screen and (min-width : 1000px) {
+/* RESTAURANTS */
+    .restaurant {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+// Media 1200px
+@media only screen and (min-width : 1200px) {
+/* PAGES MENUS */
+    .menu {
+        padding-bottom:10px;
+        max-width:100%;
+            &--grid {
+                display:grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            &__categories {
+                display: grid;
+                margin:0 20px;
+            }
+            &__subtitle { 
+                margin-left:35px;
+            }
+    }
+    .menu__block {
+        margin:10px;
+    }      
+}
