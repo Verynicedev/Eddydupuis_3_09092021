@@ -1,0 +1,20 @@
+.loading-home {
+    background: rgba(0, 0, 0, 0.95);
+    position: fixed;
+    z-index: 1000;
+    height:100%;
+    width:100%;
+    @include flexbox-center;
+    animation: loader 2s forwards;
+  }
+  .loading-home::before {
+    content: "";
+    height: 50px;
+    width: 50px;
+    border-top: 6px solid $color-primary;
+    border-right: 6px solid $color-secondary;
+    border-bottom: 6px solid $color-tertiary;
+    border-left: 6px solid $background-color;
+    border-radius: 100%;
+    animation: loader_roll 2s linear;
+  }

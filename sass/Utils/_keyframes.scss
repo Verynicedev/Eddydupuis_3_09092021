@@ -1,5 +1,21 @@
 //LOADING HOME
-
+@keyframes loader {
+    0% {
+        visibility: visible;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+@keyframes loader_roll {
+    0% {
+        transform: rotate(-360deg);
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 //TRANSITION MENU
 @keyframes transition-apparition_menu {
     0% {
